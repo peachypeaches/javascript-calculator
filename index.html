@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        const operator = prompt("Welcome!\nTo use calculator, please select an operation: \n Addition(+): 1 \n Subtraction(-): 2 \n Division(/): 3 \n Multiplication(x): 4 ");
+        const num1 = parseFloat(prompt("Enter a value"));
+        const num2 = parseFloat(prompt("Enter another value"));
+            
+        let z= num1+num2;
+        let v= num1-num2;
+        let f= num1/num2;
+        let b= num1*num2;
+
+        if(operator == "1") {
+            alert("The sum of " +num1+ " and " +num2+ " is:\n" +z);
+        }
+
+        else if(operator == "2") {
+            alert("The difference of " +num1+ " and " +num2+ " is:\n" +v);
+        }
+
+        else if(operator == "3") {
+            alert("The quotient of " +num1+ " and " +num2+ " is:\n" +f);
+        }
+
+        else if(operator == "4") {
+            alert("The product of " +num1+ " and " +num2+ " is:\n" +b);
+        }
+
+        else{
+            alert("Oops, wrong input! Please refresh page to provide new input.");
+        }
+    </script>
+</body>
+</html>

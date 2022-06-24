@@ -17,24 +17,32 @@
         let f= num1/num2;
         let b= num1*num2;
 
+        function performAgain() {
+        alert("Want to do more? Reload page to use calculator again!")
+        }
+
         if(operator == "1") {
             alert("The sum of " +num1+ " and " +num2+ " is:\n" +z);
+        performAgain()
         }
 
         else if(operator == "2") {
             alert("The difference of " +num1+ " and " +num2+ " is:\n" +v);
+            performAgain() 
         }
 
         else if(operator == "3") {
             alert("The quotient of " +num1+ " and " +num2+ " is:\n" +f);
+            performAgain()
         }
 
         else if(operator == "4") {
             alert("The product of " +num1+ " and " +num2+ " is:\n" +b);
+            performAgain()
         }
 
         else{
-            alert("Oops, wrong input! Please refresh page to provide new input.");
+            alert("Wrong input! Please refresh page to provide new input.");
         }
     </script>
 </body>
